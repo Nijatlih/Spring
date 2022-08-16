@@ -16,6 +16,7 @@ public class HomeController {
 
     @RequestMapping("/welcome")
     public String welcome(){
+
         return "welcome.html";
     }
 
