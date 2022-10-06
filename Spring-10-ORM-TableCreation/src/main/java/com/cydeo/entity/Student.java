@@ -20,8 +20,8 @@ public class Student {
     private String lastName;
     private String email;
 
-    @Transient
-    private String city; //didn't show on the table
+    @Transient  // The Role of this Annotation is to not display the city row on the table
+    private String city;
 
     @Column(columnDefinition = "DATE")
     private LocalDate birthdate;
