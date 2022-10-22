@@ -60,7 +60,7 @@ public interface EmployeeRepository extends JpaRepository<Employee,Long> {
     @Query("SELECT e FROM Employee e WHERE e.salary <> ?1 ")
     List<Employee> getEmployeeSalaryNotEqual(int salary);
 
-    //like/contains/startswith/endswith
+    //like/contains/startsWith/endsWith
     @Query("SELECT e FROM Employee e WHERE e.firstName LIKE ?1")
     List<Employee> getEmployeeFirstNameLike(String pattern);
 
